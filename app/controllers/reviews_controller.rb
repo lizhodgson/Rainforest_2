@@ -1,5 +1,5 @@
 class ReviewsController < ApplicationController
-
+    
   before_filter :load_product
 
   def show
