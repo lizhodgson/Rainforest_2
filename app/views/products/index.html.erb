@@ -1,0 +1,11 @@
+<h1>Products#index</h1>
+<p>Find me in app/views/products/index.html.erb</p>
+
+
+<h1>Products</h1>
+<%= link_to "New Product", "/products/new" %>
+
+<% @products.each do |product| %>
+  <p><%= product.title %>, <%= product.description %></p>
+  <%= link_to image_tag(product.url), "/products/#{product.id}" %>
+<% end %>
